@@ -54,13 +54,8 @@ def login():
 	artist2 = form_data['artist2']
 	artist3 = form_data['artist3']
 	artist4 = form_data['artist4']
-	artist5 = form_data['artist5']
-	artist6 = form_data['artist6']
-	artist7 = form_data['artist7']
-	artist8 = form_data['artist8']
-	artist9 = form_data['artist9']
-	artist10 = form_data['artist10']
 
+	print artist4
 #find a rule that iterates over artists
 	artists = []
 	if artist1 != '':
@@ -75,23 +70,7 @@ def login():
 	if artist4 != '':
 		artists.append(artist4)
 
-	if artist5 != '':
-		artists.append(artist5)
-
-	if artist6 != '':
-		artists.append(artist6)
-
-	if artist7 != '':
-		artists.append(artist7)
-
-	if artist8 != '':
-		artists.append(artist8)
-
-	if artist9 != '':
-		artists.append(artist9)
-
-	if artist10 != '':
-		artists.append(artist10)
+	print artists
 
 	playlist_name = form_data['playlist_name']
 	username = form_data['username']
@@ -119,7 +98,7 @@ def login():
 
 @app.route('/login')
 def form():
-	return render_template('spartifymultiple.html')
+	return render_template('spartifymultiple2.html')
 
 @app.route('/callback/')
 def callback():
