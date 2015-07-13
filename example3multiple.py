@@ -47,13 +47,51 @@ def initiate():
 def login():
 	scope = 'playlist-modify-public'
 
+#find out how to accept blank cells in forms
+
 	form_data = request.form
 	artist1 = form_data['artist1']
 	artist2 = form_data['artist2']
+	artist3 = form_data['artist3']
+	artist4 = form_data['artist4']
+	artist5 = form_data['artist5']
+	artist6 = form_data['artist6']
+	artist7 = form_data['artist7']
+	artist8 = form_data['artist8']
+	artist9 = form_data['artist9']
+	artist10 = form_data['artist10']
 
+#find a rule that iterates over artists
 	artists = []
-	artists.append(artist1)
-	artists.append(artist2)
+	if artist1 != None:
+		artists.append(artist1)
+
+	if artist2 != None:
+		artists.append(artist2)
+
+	if artist3 != None:
+		artists.append(artist3)
+
+	if artist4 != None:
+		artists.append(artist4)
+
+	if artist5 != None:
+		artists.append(artist5)
+
+	if artist6 != None:
+		artists.append(artist6)
+
+	if artist7 != None:
+		artists.append(artist7)
+
+	if artist8 != None:
+		artists.append(artist8)
+
+	if artist9 != None:
+		artists.append(artist9)
+
+	if artist10 != None:
+		artists.append(artist10)
 
 	playlist_name = form_data['playlist_name']
 	username = form_data['username']

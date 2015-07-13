@@ -1,0 +1,35 @@
+#logo {
+	width: 100%;
+	max-width: 100px;
+	margin: 5px 0;
+}
+
+#wholebar {
+	background-color: black;
+}
+
+#pitch {
+	margin-top: 100px;
+	text-align: center;
+}
+
+#content {
+	margin-top: 50px;
+}
+
+#logo_name {
+	font-family: "Lato", sans-serif;;
+	font-size: 55px;
+	color: white;
+	margin-left: 150px;
+}
+
+/*#addbtn {
+	padding: 3 9 3 9;
+	margin-left: 10px;
+}*/
+
+td {
+	padding-top: 10px;
+	padding-left: 20px;
+}
