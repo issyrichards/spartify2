@@ -58,37 +58,37 @@
                 <td><input type="text" id="artist3" value="" name="artist3" required="required" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="four">
                 <td><label for="text">Put your fourth artist here: </label></td>
                 <td><input type="text" id="artist4" value="" name="artist4" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="five">
                 <td><label for="text">Put your fifth artist here: </label></td>
                 <td><input type="text" id="artist5" value="" name="artist5" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="six">
                 <td><label for="text">Put your sixth artist here: </label></td>
                 <td><input type="text" id="artist6" value="" name="artist6" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="seven">
                 <td><label for="text">Put your seventh artist here: </label></td>
                 <td><input type="text" id="artist7" value="" name="artist7" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="eight">
               <td><label for="text">Put your eighth artist here: </label></td>
               <td><input type="text" id="artist8" value="" name="artist8" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="nine">
                 <td><label for="text">Put your ninth artist here: </label></td>
                 <td><input type="text" id="artist9" value="" name="artist9" placeholder="Artist name"></td>
               </tr>
 
-              <tr class="extras">
+              <tr class="extras" id="ten">
                 <td><label for="text">Put your tenth artist here: </label></td>
                 <td><input type="text" id="artist10" value="" name="artist10" placeholder="Artist name"></td>
               </tr>
@@ -102,10 +102,13 @@
       </div>
 
 <script>
- $(".extras").hide();
- $("#addbtn").on("click", function() {
-  $(".extras").toggle("fast");
- });
+$(document).ready(function(){
+  $('#four').hide();$('#five').hide();$('#six').hide();$('#seven').hide();$('#eight').hide();$('#nine').hide();$('#ten').hide()});
+</script>
+<script>
+$("#addbtn").on("click", function() {
+  if ($("#four").is(':hidden')) {$("#four").toggle("fast")} else if ($("#four").is(':visible') && $("#five").is(':hidden')) {$("#five").toggle("fast")} else if ($("#five").is(':visible') && $("#six").is(':hidden')) {$("#six").toggle("fast")} else if ($("#six").is(':visible') && $("#seven").is(':hidden')) {$("#seven").toggle("fast")} else if ($("#seven").is(':visible') && $("#eight").is(':hidden')) {$("#eight").toggle("fast")} else if ($("#eight").is(':visible') && $("#nine").is(':hidden')) {$("#nine").toggle("fast")} else if ($("#nine").is(':visible') && $("#ten").is(':hidden')) {$("#ten").toggle("fast")};
+});
 </script>
 
 </body>
