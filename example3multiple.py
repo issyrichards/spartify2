@@ -62,7 +62,7 @@ def login():
 	playlist_name = form_data['playlist_name']
 	username = form_data['username']
 
-	token = util.prompt_for_user_token(username, scope, '66dfb3e0319e450d8de499b92ee09eb8', '60c4e23940b14a5a9a4f160b66bae738', 'http://localhost:5000/callback/')
+	token = util.prompt_for_user_token(username, scope, '66dfb3e0319e450d8de499b92ee09eb8', '60c4e23940b14a5a9a4f160b66bae738', 'http://serene-lowlands-9914.herokuapp.com/callback/')
 	print 'after token'
 
 	if token:
